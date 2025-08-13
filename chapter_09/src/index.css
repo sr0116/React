@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif; /* 구글 기본 웹 안전 폰트 느낌 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
