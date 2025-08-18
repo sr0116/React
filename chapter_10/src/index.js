@@ -3,17 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import LoginControl from "./LoginControl";
-import MailBox from "./MailBox";
-import MainPage from "./MainPage";
-import LandingPage from "./LandingPage";
-import Web from "./chapter_09/Web";
+import NumberList from "./chapter_10/NumberList";
+import AttendanceBook from "./chapter_10/AttendanceBook";
 
+const numbers = [1, 2, 3, 4, 5]; // 추가
+// <NumberList numbers={numbers} />
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Web />
-  </React.StrictMode>
+    <AttendanceBook />
+
 );
 
 // If you want to start measuring performance in your app, pass a function

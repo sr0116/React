@@ -3,16 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import LoginControl from "./LoginControl";
-import MailBox from "./MailBox";
-import MainPage from "./MainPage";
-import LandingPage from "./LandingPage";
-import Web from "./chapter_09/Web";
+import NameForm from "./chapter_11/NameForm";
+import RequestForm from "./chapter_11/RequestForm";
+import FruitSelect from "./chapter_11/FruitSelect";
+import Reservation from "./chapter_11/Reservation";
+import Ex from "./chapter_11/Ex";
+import UserForm from "./chapter_11/UserForm";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Web />
+    < UserForm />
   </React.StrictMode>
 );
 

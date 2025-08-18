@@ -1,0 +1,59 @@
+/* 전체 기본 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  font-family: 'Noto Sans', sans-serif; /* ✅ Noto Sans 적용 */
+  background-color: #ffffff;
+  color: #333;
+  line-height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 코드 블럭 스타일 */
+code {
+  font-family: 'Noto Sans', monospace;
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #333; /* 블랙톤 */
+  font-size: 14px;
+}
+
+/* 버튼 기본 스타일 */
+button {
+  background-color: #333333;  /* 블랙 */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #666666; /* 회색 hover */
+}
+
+/* input, select */
+input, select {
+  padding: 8px 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* label */
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}

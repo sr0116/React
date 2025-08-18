@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import LoginControl from "./LoginControl";
-import MailBox from "./MailBox";
-import MainPage from "./MainPage";
-import LandingPage from "./LandingPage";
-import Web from "./chapter_09/Web";
+import WelcomeDialog from "./chapter_13/WelcomeDialog";
+import WelcomeDialog2 from "./chapter_13/WelcomeDialog2";
+import SignUpDialog from "./chapter_13/SignUpDialog";
+import ProfileCard from "./chapter_13/ProfileCard";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Web />
+    <ProfileCard />
   </React.StrictMode>
 );
 

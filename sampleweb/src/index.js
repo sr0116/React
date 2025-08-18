@@ -1,18 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
-import LoginControl from "./LoginControl";
-import MailBox from "./MailBox";
-import MainPage from "./MainPage";
-import LandingPage from "./LandingPage";
-import Web from "./chapter_09/Web";
+
+import Board from "./board/Board";
+import Member from "./member/Member";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Web />
+    <Board />
   </React.StrictMode>
 );
 
