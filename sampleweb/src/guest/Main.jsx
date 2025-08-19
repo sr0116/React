@@ -19,18 +19,44 @@ export default function Main () {
   ];
 
   const [loginUser, setLoginUser] = useState(null);
+  const [id, setId] = useState("");
+  const [pw, setPw] = useState("");
 
   function handleLogin(user) {
-    const loginUser1 = userList.filter(u => u.id === user.id && u.pw === user.pw);
-    if(loginUser1 !== null || loginUser1.length !== 0) {
-      setLoginUser(loginUser1);
+    const loginUser1 = userList.find (u  => u.id === user.id && u.pw === user.pw);
+
+    if (user) {
+      setLoginUser(user);
+      alert("로그인 성공");
+    } else {
+      alert("로그인 실패");
     }
+
+    setId("");
+    setPw("");
   }
+
   return (
     <div>
-
-
+      {loginUser ? (
+        <h2>{loginUser.id}님 로그인에 성공하셨습니다</h2>
+      ) : (
+        <form onSubmit={handleLogin}>
+          <input
+            type="text"
+            placeholder="아이디"
+            value={id}
+            onChange={(e) => setId(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="비밀번호"
+            value={pw}
+            onChange={(e) => setPw(e.target.value)}
+          />
+          <button type="submit">로그인</button>
+        </form>
+      )}
     </div>
-
   );
 }

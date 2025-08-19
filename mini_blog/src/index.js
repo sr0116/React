@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
 import './index.css';
-import Board from "./board/Board";
-import Member from "./member/Member";
-import Web from "./user/Web";
-import Main from "./guest/Main";
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Web />
-  </React.StrictMode>
+    <App />
+
 );
 
 // If you want to start measuring performance in your app, pass a function
