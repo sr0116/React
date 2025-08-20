@@ -12,7 +12,6 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  border: 1px solid grey;
   
 `;
 
