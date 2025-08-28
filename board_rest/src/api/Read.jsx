@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios"; // 서버에서 데이터만 가져올 때 사용하는 객체
-import {useNavigate, useParams} from "react-router-dom";
+import { useNavigate, useParams} from "react-router-dom";
 // use location 은 주소창의 값을 가져올 때 사용하는 훅
 import dayjs from "dayjs";
 
@@ -8,8 +8,10 @@ import dayjs from "dayjs";
 export default function Read() {
   const [dto, setDto] = useState(null
       // bno: '', title: '', content: '',
-
   );
+  // 키워드랑  타입
+  //쿼리스트링으로 이동 (타입 키워드) 정의
+  const { bno } = useParams();
 
   // 바로 이동
   const navigate = useNavigate();
@@ -35,7 +37,6 @@ export default function Read() {
     // 자바스크립트에서 월은 0~11 을 리턴 -> 1 더해줘야 함
     // padstart 두자리로 변경하는데비어있는 곳은 두번째 파라미터
   };
-    const {bno} = useParams();
 
   useEffect(() => {
     axios.get(`http://localhost:8080/boardrest/read/${bno}`)
@@ -45,7 +46,7 @@ export default function Read() {
       .catch((e) => {
         console.log('error: ', e);
       });
-  }, []);
+  }, [bno]);
   
   // 삭제 이벤트
   const handleRemove =  () => {
